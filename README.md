@@ -16,8 +16,8 @@ and the huggingface inference API by default (this can be changed though).
 1. **Clone the repository:** Inside a Folder of your choice run `git clone "https://github.com/vetterjulius/poca.git"`.
 2. **Install required Python packages:** Run `pip install -r requirements.txt`.
 3. **Configure model, provider and system prompt:** Visit `config.py` and change the constants to your model providers data (by default it uses the huggingface inference API).
-4. **Set your API key:** Inside the `poca` directory create a file called `.env` and set the right environment variable for your model provider (for openai and compatible providers it's `OPENAI_API_KEY = your_api_key`).
-5. **Run the CLI interface:** Run `python cli_interface.py run "your_prompt"`. For help run `python cli_interface.py --help`. You can also use the `PocaAgent` class from  the `poca_agent.py` file to integrate POCA into your own projects.
+4. **Set your API key:** Inside the root `poca` directory create a file called `.env` and set the right environment variable for your model provider (for openai and compatible providers it's `OPENAI_API_KEY = your_api_key`).
+5. **Run the CLI interface:** Run `python poca/cli_interface.py run "your_prompt"`. For help run `python poca/cli_interface.py --help`. You can also use the `PocaAgent` class from  the `poca_agent.py` file to integrate POCA into your own projects.
 ---
 ## Project Overview (relevant Python files):
 - `tools.py`: Contains all tools that can be used by the agent (e.g. file manipulation, fetching webpages). You can add your own tools and/or define your own tool groups here.
