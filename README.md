@@ -25,6 +25,10 @@ and the huggingface inference API by default (this can be changed though).
 - `config.py`: Different configuration options that get passed to the `PocaAgent` class as defaults (but can be overwritten in the constructor). Configure this file to match the information from your model provider.
 - `cli_interface.py`: Contains the CLI wrapper for the `PocaAgent` class.
 ---
+## How to use POCA in your own projects
+1. Run `pip install poca-agent`
+2. In your python file add `from poca.poca_agent import PocaAgent`. Now you can use the `PocaAgent` class.
+---
 ## Disclaimer
 - Run the program at your own risk. It shouldn't mess anything up and it hasn't yet but I don't want to guarantee that. I recommend reading and understanding the few lines of source code in this repository before running it.
 ---
