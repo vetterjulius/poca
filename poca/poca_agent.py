@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 from deepagents import create_deep_agent
 from langchain.chat_models import init_chat_model
 from deepagents.backends import FilesystemBackend
-import config
+from poca import config
 
 load_dotenv(Path(os.getcwd()) / ".env")
 

@@ -6,8 +6,9 @@ POCA CLI - Python Open Coding Agent
 import argparse
 import sys
 import os
-from poca_agent import PocaAgent
-import config
+from poca.poca_agent import PocaAgent
+from poca import config
+from poca.tools import all_tools
 
 VERSION = "0.1.0"
 
@@ -80,6 +81,7 @@ def cmd_run(args: argparse.Namespace):
         base_url=args.base_url,
         max_tokens=args.max_tokens,
         root_dir=args.root_dir,
+        tools=all_tools
     )
 
     result = agent.run(args.prompt)
